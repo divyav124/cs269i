@@ -89,3 +89,5 @@ Without writing any code, you should be able to run the competition for the exis
 All you need to do is to write a strategy.py file and add it to exampleStrats. No need to change any existing files.
 
 When submitting to gradescope, you only submit strategy.py, no other files are needed.
+
+For any questions, feel free to make a post on edstem.
