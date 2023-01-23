@@ -1,19 +1,15 @@
-# PrisonersDilemmaTournament
+# Iterated File-Sharing Dilemma
 
-This is the CS 269i class project developed by the former CS269i student, Cary Huang.
+This is the CS 269i class project developed by the former CS269i student, Cary Huang (We really appreciate for Cary's wonderful work).
 
-Watch This Place's awesome videos about iterated Prisoner's Dilemma for context!
 
-https://www.youtube.com/watch?v=t9Lo2fgxWHw
-
-https://www.youtube.com/watch?v=BOvAbjfJ0x0
 
 Nicky Case's "The Evolution of Trust" is also super fascinating, but it's not necessary to understand this project: https://ncase.me/trust/
 
 How this works:
-When you run code/prisonersDilemma.py, it will search through all the Python strategy files in code/exampleStrats. Then, it will simulate "Iterated Prisoner's Dilemma" with every possible pairing. (There are (n choose 2) pairings.) After all simulations are done, it will average each strategies' overall score. It will then produce a leaderboard of strategies based on their average performance, and save it to results.txt.
+When you run code/dilemma_run.py, it will search through all the Python strategy files in code/exampleStrats. Then, it will simulate "Iterated Prisoner's Dilemma" with every possible pairing. (There are (n choose 2) pairings.) After all simulations are done, it will average each strategies' overall score. It will then produce a leaderboard of strategies based on their average performance, and save it to results.txt.
 
-If you'd like to add your own strategy, all you have to do is create a new .py file in the code/exampleStrats folder that follows the same format as the others. Then, when you run code/prisonersDilemma.py, it should automatically include your strategy into the tournament!
+If you'd like to add your own strategy, all you have to do is create a new .py file in the code/exampleStrats folder that follows the same format as the others. Then, when you run code/dilemma_run.py, it should automatically include your strategy into the tournament!
 
 # Details
 | Payout Chart  | Player A cooperates | Player A defects |
@@ -47,7 +43,7 @@ This means each game is guaranteed to be at least 200 turns long. But then, for 
 
 
 # Tasks
-You are expected to write a python file named strategy.py (Please keep this name!). In this file you are expected to implement a function named strategy. After you finish you code, put the strategy.py to the folder exampleStrats, run the prisonersDilemma.py.
+You are expected to write a python file named strategy.py (Please keep this name!). In this file you are expected to implement a function named strategy. After you finish you code, put the strategy.py to the folder exampleStrats, run the dilemma_run.py.
 
 # Tips
 
@@ -73,15 +69,15 @@ conda install pip
 pip install -r requirements.txt
 ```
 
-After you have successfully create the environment, enter the code environment, and run prisonersDilemma.py
+After you have successfully create the environment, enter the code environment, and run dilemma_run.py
 
 ```
 cd code 
 
-python prisonersDilemma.py
+python dilemma_run.py
 ```
 
-Without writing any code, you should be able to run the competition for the existing strategies in the exampleStrats folder. Then, you write your own strategy.py and put the file into the folder, rerun prisonersDilemma.py to see whether you can beat these baselines.
+Without writing any code, you should be able to run the competition for the existing strategies in the exampleStrats folder. Then, you write your own strategy.py and put the file into the folder, rerun dilemma_run.py to see whether you can beat these baselines.
 
 
 # Note
