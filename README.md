@@ -35,12 +35,7 @@ For the outputs: the first value is just the move your strategy chooses to make,
 
 ---
 
-Each pairing simulation runs for this many turns:
-```
-200-40*np.log(random.random())
-```
-This means each game is guaranteed to be at least 200 turns long. But then, for every turn after the 200th, there is an equal probability that the game ends. The probability is very low, so there should be no strategizing to defect on the very last turn consequence-free.
-
+**Each pairing simulation runs for 200 turns.**
 
 # Tasks
 You are expected to write a python file named strategy.py (Please keep this name!). In this file you are expected to implement a function named strategy. After you finish you code, put the strategy.py to the folder exampleStrats, run the dilemma_run.py.
